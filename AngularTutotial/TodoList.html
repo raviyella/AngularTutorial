@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="TodoListApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Scripts/jquery-2.1.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/TodoList.js"></script>
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/bs-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <title>AngularJs Tutorial Todo App</title>
+
+</head>
+<body>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <div ng-controller="TodoController">
+    <table  class=" table table-striped table-condensed table-hover">
+        <thead>
+        <th>Todo</th>
+        <th>Priority</th>
+        <th>Due</th>
+        </thead>
+        <tr ng-repeat="todo in todos">
+            <td>{{todo.Text}}</td>
+            <td>{{todo.Priority}}</td>
+            <td>{{todo.DueDate | date: mediumdate}}</td>
+        </tr>
+    </table>
+        </div>
+</body>
+</html>
+

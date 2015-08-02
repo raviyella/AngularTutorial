@@ -1,0 +1,72 @@
+﻿<!--<div from="hello" greet="audience"></div>-->
+<!--<head>
+    <style type="text/css">
+        .search-query {
+            height: 33px;
+        }
+    </style>
+</head>-->
+<!--<form class="form-search">
+    <div class="input-append">
+        <input type="text" ng-model="query" class="input-medium search-query" placeholder="Search"/>
+        <button ng-click="reset()" type="submit" class="btn"><i class="fa fa-search"></i></button>
+        <button ng-click="query='';reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
+    </div>
+</form>-->
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li class="disabled"><a href="#">Disabled</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </li>
+</ul>
+<form class="navbar-form navbar-brand" role="search">
+    <div class="form-group">
+        <input type="text" ng-model="query" class="form-control" placeholder="Search">
+    </div>
+    <button ng-click="reset()" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+    <button ng-click="query='';reset()" ng-disabled="!query" type="submit" class="btn btn-primary">Reset</button>
+</form>
+
+<table class=" table table-striped table-condensed table-hover">
+    <thead>
+    <th sorted="Text">Todo</th>
+    <th sorted="Priority">Priority</th>
+    <th sorted="DueDate">DueDate</th>
+    <th><a href="#/new"><i class="fa fa-plus-square"></i></a></th>
+    <!--<th><a ng-click="sort('Text')">Todo</a>
+        <span ng-show="sort_order=='Text' && is_desc == true"><i class ="fa fa-arrow-down"></i></span>
+        <span ng-show="sort_order=='Text' && is_desc == </a>false"><i class ="fa fa-arrow-up"></i></span>
+    </th>
+    <th><a ng-click="sort('Priority')">Priority</a>
+        <span ng-show="sort_order=='Priority' && is_desc == true"><i class ="fa fa-arrow-down"></i></span>
+        <span ng-show="sort_order=='Priority' && is_desc == false"><i class ="fa fa-arrow-up"></i></span>
+    </th>
+    <th><a ng-click="sort('DueDate')">DueDate</a>
+        <span ng-show="sort_order=='DueDate' && is_desc == true"><i class ="fa fa-arrow-down"></i></span>
+        <span ng-show="sort_order=='DueDate' && is_desc == false"><i class ="fa fa-arrow-up"></i></span>
+    </th>-->
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in items" id="item_{{item.TodoId}}"> 
+        <td>{{item.Text}}</td>
+        <td>{{item.Priority}}</td>
+        <td>{{item.DueDate | date: mediumdate}}</td>
+        <td>
+            <a href="#/edit/{{item.TodoId}}"><i class="fa fa-pencil-square-o"></i></a>
+            <a href="#/" ng-click="delete()"><i class="fa fa-times"></i></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<a ng-show="has_more()" ng-click="show_more()">Show More</a>
