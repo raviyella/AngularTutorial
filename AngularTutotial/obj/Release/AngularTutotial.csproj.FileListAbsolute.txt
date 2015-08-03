@@ -64,7 +64,6 @@ C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\bin\ko\Syst
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\bin\ru\System.Spatial.resources.dll
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\obj\Release\AngularTutotial.csprojResolveAssemblyReference.cache
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\obj\Release\AngularTutotial.Migrations.InitialCreate.resources
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\obj\Release\AngularTutotial.Migrations.CreateTodoIndexes.resources
 C:\Users\IBM_ADMIN\Desktop\Tutorials\AngularTutorial\AngularTutotial\obj\Release\AngularTutotial.csproj.GenerateResource.Cache
