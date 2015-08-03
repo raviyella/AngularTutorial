@@ -171,6 +171,10 @@
     <Compile Include="Migrations\201507302222156_InitialCreate.Designer.cs">
       <DependentUpon>201507302222156_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508030909298_CreateTodoIndexes.cs" />
+    <Compile Include="Migrations\201508030909298_CreateTodoIndexes.Designer.cs">
+      <DependentUpon>201508030909298_CreateTodoIndexes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Todo.cs" />
     <Compile Include="Models\TodoContext.cs" />
@@ -1109,6 +1113,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507302222156_InitialCreate.resx">
       <DependentUpon>201507302222156_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508030909298_CreateTodoIndexes.resx">
+      <DependentUpon>201508030909298_CreateTodoIndexes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
